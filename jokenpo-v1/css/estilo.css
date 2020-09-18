@@ -1,0 +1,83 @@
+/*Reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: aqua;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header {
+    background-color: black;
+    color: aqua;
+    text-align: center;
+    width: 100%;
+}
+
+/*Estilização do placar*/
+.placar {
+    margin: 20px auto; /*Centralizar a caixa*/
+    border: 5px solid white;
+    border-radius: 10px; /*Arredondamento das bordas*/
+    text-align: center;
+    width: 200px;
+    font-size: 40px;
+    padding: 15px 15px;
+    position: relative;
+} 
+
+.badge {
+    background-color: gray;
+    font-size: 15px;
+    padding: 2px 15px;
+}
+
+#jogador {
+    position: absolute;
+    top: 30px;
+   left: -40px;
+}
+#computador {
+   position: absolute;
+   top: 30px;
+   right: -35px;
+}
+
+/*Resultado do Jogo*/
+.resultado {
+    font-size: 40px;
+    font-weight: bold; /*Negrito*/
+    text-align: center;
+}
+
+/*Escolhas*/
+.escolhas {
+    text-align: center;
+    margin-top: 50px;
+}
+ button.escolha {
+    border: 4px solid lightgreen;
+    border-radius: 50%; /*Arredondando os botões*/
+    font-size: 42px;
+    padding: 10px;
+    margin: 0 20px;
+    transition: all 0.3s ease;
+}
+ .escolha:hover {/*Ao passar o mouse por cima*/
+    background-color: grey;
+    cursor: pointer;
+}
+ .escolha:active {/*Ao clicar com o mouse*/
+    background-color: cadetblue;
+}
+
+#jogada {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 20px;
+} 
